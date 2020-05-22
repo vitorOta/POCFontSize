@@ -6,8 +6,11 @@ import android.content.Context
 import android.os.Bundle
 import android.view.WindowManager
 
-
 class App : Application(), Application.ActivityLifecycleCallbacks {
+    override fun onCreate() {
+        super.onCreate()
+        registerActivityLifecycleCallbacks(this)
+    }
 
     override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {
         adjustFontScale(activity)
@@ -23,7 +26,7 @@ class App : Application(), Application.ActivityLifecycleCallbacks {
             wm.defaultDisplay.getMetrics(metrics)
             metrics.scaledDensity = configuration.fontScale * metrics.density
             //this method is deprecated, but is here to a first glance
-            this@App.resources.updateConfiguration(configuration, metrics)
+            applicationContext.resources.updateConfiguration(configuration, metrics)
         }
     }
 
