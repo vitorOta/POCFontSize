@@ -25,8 +25,6 @@ class App : Application(), Application.ActivityLifecycleCallbacks {
             val wm = getSystemService(Context.WINDOW_SERVICE) as WindowManager
             wm.defaultDisplay.getMetrics(metrics)
             metrics.scaledDensity = configuration.fontScale * metrics.density
-            //this method is deprecated, but is here to a first glance
-            applicationContext.resources.updateConfiguration(configuration, metrics)
         }
     }
 

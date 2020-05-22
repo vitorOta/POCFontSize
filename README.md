@@ -1,0 +1,1 @@
+Solution inspired from [Fix the Font Size Regardless the System Settings](https://basecamp.temenos.com/s/article-detail/a046A00000AVTFxQAP/fix-the-font-size-regardless-the-system-settings)
