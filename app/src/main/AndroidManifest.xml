@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:configChanges="fontScale">
+            android:configChanges="fontScale|orientation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

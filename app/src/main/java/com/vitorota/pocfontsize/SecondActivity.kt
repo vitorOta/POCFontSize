@@ -1,6 +1,7 @@
 package com.vitorota.pocfontsize
 
 import android.content.Intent
+import android.content.res.Configuration
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
